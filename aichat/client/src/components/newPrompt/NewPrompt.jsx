@@ -44,13 +44,13 @@ const NewPrompt = () => {
             Object.entries(img.aiData).length ? [img.aiData, text] : [text]
         );
         let accumulatedText = "";
-        for await (const chunk of result.stream) {
+        for await (const chunk of result.stream) { //Runs line by line
             const chunkText = chunk.text();
             console.log(chunkText);
             accumulatedText += chunkText;
             setAnswer(accumulatedText)
         }
-        setImg({
+        setImg({ //Make img variable back to empty
             isLoading:false,
             error:"",
             dbData:{},
