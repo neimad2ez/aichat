@@ -10,11 +10,13 @@ app.use(cors({
     origin: process.env.CLIENT_URL,
 }));
 
+app.use(express.json())
+
 const connect = async () => {
     try {
         await mongoose.connect(process.env.MONGO)
         console.log("Connected to MongoDB")
-    } catch (err) {
+    } catch(err) {
         console.log(err)
     }
 }
@@ -28,6 +30,11 @@ const imagekit = new ImageKit({
 app.get("/api/upload", (req, res) => {
     const result = imagekit.getAuthenticationParameters();
     res.send(result)
+})
+
+app.post("/api/chats", (req, res) => {
+    const {text} = req.body
+    console.log(text)
 })
 
 app.listen(port, () => {
