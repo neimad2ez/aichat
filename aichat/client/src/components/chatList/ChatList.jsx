@@ -11,15 +11,6 @@ const ChatList = () => {
             <hr />
             <span className="title">RECENT CHAT</span>
             <div className="list">
-                <Link to="/">hi</Link>
-                <Link to="/">hi</Link>
-                <Link to="/">hi</Link>
-                <Link to="/"></Link>
-                <Link to="/"></Link>
-                <Link to="/"></Link>
-                <Link to="/"></Link>
-                <Link to="/"></Link>
-
             </div>
             <hr />
             <div className="upgrade">
