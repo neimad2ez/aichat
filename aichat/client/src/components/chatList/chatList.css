@@ -23,7 +23,9 @@
         flex-direction: column;
         overflow: scroll;
         overflow-x: hidden;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
     }
 
     a {
