@@ -28,6 +28,10 @@ provides summaries of complex topics and learns and improves over time.
 * Mongoose
 * Nodemon
 
+## Demo
+
+https://github.com/user-attachments/assets/323fde42-394c-4c1d-ad23-649aaa1e3399
+
 ## Getting Started
 In order to get the AI Chat Bot running you need these prerequisites.
 
